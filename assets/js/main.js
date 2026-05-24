@@ -29,7 +29,54 @@ navLink.forEach((el) => el.addEventListener("click", linkAction));
 /*=============== CHANGE HEADER STYLES ===============*/
 
 /*=============== SWIPER JS ===============*/
+const swiperThumbs = new Swiper(".home__thumbs", {
+    slidesPerView: "auto",
+    direction: "vertical",
+});
 
+const swiperHome = new Swiper(".home__swiper", {
+    direction: "vertical",
+    loop: true,
+    speed: 500,
+    effect: "creative",
+    creativeEffect: {
+        prev: {
+            translate: [100, -200, -100],
+            opacity: 0,
+        },
+        next: {
+            translate: [100, 200, 100],
+            opacity: 0,
+        },
+    },
+
+    breakpoints: {
+        1150: {
+            creativeEffect: {
+                prev: {
+                    translate: [200, -500, -100],
+                },
+                next: {
+                    translate: [200, 500, 100],
+                },
+            },
+        },
+    },
+
+    thumbs: {
+        swiper: swiperThumbs,
+    },
+
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
 /*=============== GSAP ANIMATION ===============*/
 
 /*=============== BUTTON MOUSE MOVE ===============*/

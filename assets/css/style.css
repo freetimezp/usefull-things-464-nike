@@ -174,13 +174,301 @@ img {
 /* Change header styles */
 
 /*=============== HOME ===============*/
+.home {
+    background-color: var(--purple-color-dark);
+    padding-block: 6.5rem;
+}
+
+.home__content {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+}
+
+.home__data {
+    color: var(--purple-color-light);
+}
+
+.home__label {
+    font: 700 var(--smaller-font-size) var(--second-font);
+}
+
+.home__price {
+    font-size: var(--h2-font-size);
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.home__variant {
+    font-family: var(--second-font);
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+.home__date {
+    margin-block: 0.5rem;
+}
+
+.home__buttons {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.home__button-bag {
+    background: var(--linear-gradient-1);
+    color: var(--white-color);
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.2);
+    padding: 1rem;
+    text-transform: uppercase;
+    border-radius: 4rem;
+    font-family: var(--second-font);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    column-gap: 0.75rem;
+    cursor: pointer;
+}
+
+.home__button-bag i {
+    font-size: 1.5rem;
+    font-weight: initial;
+}
+
+.home__button-heart {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.home__area {
+    position: relative;
+}
+
+.home__blob-pink,
+.home__blob-blue,
+.home__logo,
+.home__name {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+}
+
+.home__blob-pink {
+    width: 300px;
+    height: 300px;
+    background-color: var(--pink-color);
+    border-radius: 50%;
+    top: 1rem;
+    filter: blur(88px);
+}
+
+.home__blob-blue {
+    width: 180px;
+    height: 180px;
+    background-color: var(--blue-color);
+    border-radius: 50%;
+    top: 7rem;
+    filter: blur(32px);
+}
+
+.home__logo {
+    width: 300px;
+    top: 6.5rem;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.home__name {
+    width: max-content;
+    font-size: var(--biggest-font-size);
+    top: 13rem;
+    z-index: 2;
+}
+
+.home__preview {
+    cursor: pointer;
+}
+
+.home__preview img {
+    width: 60px;
+    filter: drop-shadow(0 8px 16px hsla(0, 0%, 0%, 0.4));
+}
+
+.home__sneaker img {
+    width: 200px;
+    filter: drop-shadow(0 8px 16px hsla(0, 0%, 0%, 0.4));
+}
+
+.home__sizes {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    align-self: center;
+    row-gap: 1.5rem;
+    z-index: 10;
+}
+
+.home__guide {
+    writing-mode: vertical-rl;
+}
+
+.home__guide h3 {
+    font-size: var(--normal-font-size);
+}
+
+.home__guide p {
+    font: 600 var(--smaller-font-size) var(--second-font);
+    color: var(--purple-color-light);
+}
+
+.home__options {
+    display: grid;
+    justify-content: center;
+    row-gap: 0.75rem;
+}
+
+.home__radio input {
+    display: none;
+}
+
+.home__check {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--purple-color);
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    font: 600 var(--smaller-font-size) var(--second-font);
+}
+
+.home__radio input:checked + .home__check {
+    background: var(--linear-gradient-1);
+    border: none;
+}
 
 /* Swiper class */
+.home__swiper {
+    width: 300px;
+    height: 300px;
+    overflow: initial;
+    z-index: 5;
+}
 
-/* Swiper thumbs */
+.home__swiper .swiper-slide {
+    display: grid;
+    overflow: initial;
+}
 
-/* Swiper navigation & pagination */
+.home__swiper .swiper-slide img {
+    margin-block: auto;
+}
 
+.home__thumbs .swiper-wrapper {
+    display: grid;
+    align-content: center;
+    row-gap: 1.5rem;
+}
+
+.home__thumbs {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3rem;
+    overflow: initial;
+    z-index: 10;
+}
+
+.home__thumbs .swiper-slide:nth-child(2) {
+    margin-left: 2rem;
+}
+
+.home .swiper-navigation-icon {
+    display: none;
+}
+
+.home :is(.swiper-button-prev, .swiper-button-next) {
+    top: initial;
+    left: initial;
+    bottom: -3rem;
+    margin: initial;
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid var(--purple-color);
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.home .swiper-button-prev {
+    left: calc(50% - 3rem);
+}
+
+.home .swiper-button-prev::after {
+    content: "PREV";
+    font: 600 var(--small-font-size) var(--second-font);
+    position: absolute;
+    left: -3rem;
+    color: var(--purple-color-light);
+}
+
+.home .swiper-button-prev:hover {
+    background-image: var(--linear-gradient-3);
+    border-color: transparent;
+    background-clip: padding-box;
+}
+
+.home .swiper-button-next {
+    right: calc(50% - 3rem);
+}
+
+.home .swiper-button-next::after {
+    content: "NEXT";
+    font: 600 var(--small-font-size) var(--second-font);
+    position: absolute;
+    right: -3rem;
+    color: var(--purple-color-light);
+}
+
+.home .swiper-button-prev:hover {
+    background-image: var(--linear-gradient-2);
+    border-color: transparent;
+    background-clip: padding-box;
+}
+
+.home .swiper-pagination-vertical.swiper-pagination-bullets {
+    top: initial;
+    left: 0;
+    right: 0;
+    bottom: -6rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.home .swiper-pagination-bullet {
+    width: 30px;
+    height: 5px;
+    border-radius: 0.5rem;
+    background-color: var(--purple-color);
+    opacity: 1;
+    transition: background-color 0.4s;
+}
+
+.home .swiper-pagination-bullet-active {
+    background-color: var(--purple-color-light);
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices <> */
 
