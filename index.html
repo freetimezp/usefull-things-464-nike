@@ -2,15 +2,81 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+
+        <!--=============== REMIXICONS ===============-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" />
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+        <!--=============== CSS ===============-->
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
+
+        <title>project</title>
     </head>
-
     <body>
-        start
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="./assets/images/logo-nike.svg" alt="" />
+                </a>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#" class="nav__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">MEN</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">WOMEN</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav__link">EXPLORE</a>
+                        </li>
+                    </ul>
+
+                    <button class="nav__close" id="nav-close">
+                        <i class="ri-close-large-line"></i>
+                    </button>
+                </div>
+
+                <div class="nav__buttons">
+                    <button class="nav__search">
+                        <i class="ri-search-2-line"></i>
+                    </button>
+
+                    <button class="nav__shop">
+                        <i class="ri-shopping-bag-line"></i>
+                    </button>
+
+                    <button class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home"></section>
+        </main>
+
+        <!--=============== GSAP ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
